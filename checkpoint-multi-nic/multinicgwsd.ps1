@@ -11,23 +11,23 @@ if ($PSVersionTable.PSVersion.Major -lt 4) {
 
 # Description: Name of the resource group to create 
 # Mandatory   : Yes
-$ResourceGroup = ""
+$ResourceGroup = "sd_cp_rg_test"
 # Description : Azure location (e.g. eastus2)
 # Mandatory   : Yes
-$Location = ""
+$Location = "West Europe"
 # Description : The Subscription ID to use in case you have more than one]
 # Mandatory   : No
-$SubscriptionId = ""
+$SubscriptionId = "Free Trial"
 # Description : The Name of storage account to create
 # Mandatory   : Yes
 # Valid values: Globally unique, 3-24 lower case alphanumeric characters.
-$StorageAccount = ""
+$StorageAccount = "sd_cp_sa_test"
 
 # Set one of the following
 
 # Description : The Administrator password
 # Mandatory   : Yes, if installing management or if not supplying an SSH public key. 
-$Password = ""
+$Password = "Police99"
 # Description : The Administrator SSH public key (if using SSH public key authentication)
 # Mandatory   : Only if not providing an SSH password 
 $SSHPublicKey = ""
@@ -55,7 +55,7 @@ $ManagementGUIClientNetwork="0.0.0.0/0"
 # Secure Internal Communication (SIC) one time key used to establish initial 
 # trust between the gateway and its management server.
 # Mandatory   : Yes
-$SicKey = ""
+$SicKey = "Police100"
 
 # Description : The name of the Virtual Network to create
 # Mandatory   : Yes
@@ -89,7 +89,7 @@ $Subnet3PrivateAddress = "10.0.3.10"
 # Description : The gateway name
 # Mandatory   : Yes
 # Valid values: Must begin with a lower case letter and consist only of low case letters and numbers.
-$GatewayName = ""
+$GatewayName = "gateway1"
 # Description : The size of the gateway VM
 # Mandatory   : Yes
 $GatewayVMSize = "Standard_D3_v2"
